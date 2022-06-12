@@ -54,7 +54,7 @@ jobs:
           CXX: clang++
 
       - name: Upload artificat
-        uses: actions/upload-artifact@v3.0.1
+        uses: actions/upload-artifact@v3.1.0
         with:
           name: macos
           path: desmume/src/frontend/interface/build/libdesmume.dylib
@@ -79,7 +79,7 @@ jobs:
           MSBuild.exe DeSmuME_Interface.vcxproj /p:configuration="Release Fastbuild" /p:Platform=${{ matrix.arch }}
 
       - name: Upload artificat
-        uses: actions/upload-artifact@v3.0.1
+        uses: actions/upload-artifact@v3.1.0
         with:
           name: win-${{ matrix.arch }}
           path: desmume/src/frontend/interface/windows/__bins/*.dll

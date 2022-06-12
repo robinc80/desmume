@@ -24,7 +24,7 @@ jobs:
           cmd /c desmume\src\frontend\windows\ci_postbuild.bat
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3.0.1
+        uses: actions/upload-artifact@v3.1.0
         with:
           name: desmume-win-x64
           path: desmume/src/frontend/windows/__bins/*.exe
